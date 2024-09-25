@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Navbar from './Components/Navbar/Navbar'; // Update path as necessary
 import Cakes from './Components/Cakes';
 import Myflavours from './Components/Myflavours';
 import Themecakes from './Components/Themecakes';
@@ -13,6 +12,7 @@ import Occasion from './Components/Occasion';
 import Customizedcakes from './Components/Customizedcakes';
 import Login from './Components/Login';
 import Cart from './Components/Cart';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Route path='/' element={<Cakes />} />
         <Route path='/cakes' element={<Cakes />} />
         <Route path='/myflavour' element={<Myflavours />} />
-        <Route path='/themecakes' element={<Themecakes />} />
+        <Route path='/themecakes' element={<Themecakes/>} />
         <Route path='/myrelationship' element={<MyRelationship />} />
         <Route path='/dessert' element={<Dessert />} />
         <Route path='/birthday' element={<Birthday />} />
